@@ -1,0 +1,6 @@
+framework module Pods_AngelHack {
+  umbrella header "Pods-AngelHack-umbrella.h"
+
+  export *
+  module * { export * }
+}

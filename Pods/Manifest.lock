@@ -1,0 +1,83 @@
+PODS:
+  - AWSAuthCore (2.6.23):
+    - AWSCore (= 2.6.23)
+  - AWSAuthUI (2.6.23):
+    - AWSAuthCore (= 2.6.23)
+    - AWSCore (= 2.6.23)
+  - AWSCognitoIdentityProvider (2.6.23):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.23)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.23)
+  - AWSLex (2.6.23):
+    - AWSCore (= 2.6.23)
+  - AWSMobileClient (2.6.23):
+    - AWSAuthCore (= 2.6.23)
+  - AWSPinpoint (2.6.23):
+    - AWSCore (= 2.6.23)
+  - AWSUserPoolsSignIn (2.6.23):
+    - AWSAuthCore (= 2.6.23)
+    - AWSCognitoIdentityProvider (= 2.6.23)
+  - BWWalkthrough (2.1.2)
+  - Cache (4.2.0)
+  - Hue (3.0.1)
+  - Imaginary (3.0.3):
+    - Cache (~> 4.0)
+  - Kingfisher (4.6.4)
+  - Lightbox (2.1.2):
+    - Hue (~> 3.0)
+    - Imaginary (~> 3.0)
+  - MapViewPlus (0.1.2):
+    - Kingfisher (~> 4.6.3)
+
+DEPENDENCIES:
+  - AWSAuthUI
+  - AWSLex
+  - AWSMobileClient
+  - AWSPinpoint
+  - AWSUserPoolsSignIn
+  - BWWalkthrough
+  - Kingfisher
+  - Lightbox
+  - MapViewPlus
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSLex
+    - AWSMobileClient
+    - AWSPinpoint
+    - AWSUserPoolsSignIn
+    - BWWalkthrough
+    - Cache
+    - Hue
+    - Imaginary
+    - Kingfisher
+    - Lightbox
+    - MapViewPlus
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 2db4c4f3db70e5789193b602e0392d25da6aca4e
+  AWSAuthUI: 0ac83168ce36d55367b3755acf8af7d29a533b3f
+  AWSCognitoIdentityProvider: 605ea825077825717418e37fba27d5cd23958ea2
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: d56f69d7312e652e51c70f3b25e1687a5c2d06ca
+  AWSLex: 208f862a51e1a0c5e856f63fc6893e33c3eef720
+  AWSMobileClient: c94ca9856f99e99a4813ebc7f4c19cecce7f06c8
+  AWSPinpoint: 198ece283bc4b5b7dc8e08dfb3415b6225203e7f
+  AWSUserPoolsSignIn: a101355358dec050f2ee2e81302e6011e2a95093
+  BWWalkthrough: 6b18dc688ff6b7168383fee07fe199ccaad7e9f7
+  Cache: f28f8dd64b632155aabf9b3906b036a659048251
+  Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
+  Imaginary: 9b45836a5af881f452a86e0a1215772ae4712d00
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  Lightbox: 2dc267df8be2285bc7724cb11cbbf4aaaf59dced
+  MapViewPlus: 4e448279f98297f007cb16904a244a525b3c9d5e
+
+PODFILE CHECKSUM: abb8ddeebe2f9636cdb237a04ed50d21ed38b5f2
+
+COCOAPODS: 1.5.3
