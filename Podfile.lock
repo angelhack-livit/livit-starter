@@ -4,6 +4,8 @@ PODS:
   - AWSAuthUI (2.6.23):
     - AWSAuthCore (= 2.6.23)
     - AWSCore (= 2.6.23)
+  - AWSCognito (2.6.23):
+    - AWSCore (= 2.6.23)
   - AWSCognitoIdentityProvider (2.6.23):
     - AWSCognitoIdentityProviderASF (= 1.0.1)
     - AWSCore (= 2.6.23)
@@ -14,6 +16,8 @@ PODS:
   - AWSMobileClient (2.6.23):
     - AWSAuthCore (= 2.6.23)
   - AWSPinpoint (2.6.23):
+    - AWSCore (= 2.6.23)
+  - AWSS3 (2.6.23):
     - AWSCore (= 2.6.23)
   - AWSUserPoolsSignIn (2.6.23):
     - AWSAuthCore (= 2.6.23)
@@ -32,9 +36,11 @@ PODS:
 
 DEPENDENCIES:
   - AWSAuthUI
+  - AWSCognito (~> 2.6.13)
   - AWSLex
   - AWSMobileClient
   - AWSPinpoint
+  - AWSS3 (~> 2.6.13)
   - AWSUserPoolsSignIn
   - BWWalkthrough
   - Kingfisher
@@ -45,12 +51,14 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AWSAuthCore
     - AWSAuthUI
+    - AWSCognito
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
     - AWSCore
     - AWSLex
     - AWSMobileClient
     - AWSPinpoint
+    - AWSS3
     - AWSUserPoolsSignIn
     - BWWalkthrough
     - Cache
@@ -63,12 +71,14 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AWSAuthCore: 2db4c4f3db70e5789193b602e0392d25da6aca4e
   AWSAuthUI: 0ac83168ce36d55367b3755acf8af7d29a533b3f
+  AWSCognito: e71a92dd66d4023f6e80487aa1ddd7e0bdb10b25
   AWSCognitoIdentityProvider: 605ea825077825717418e37fba27d5cd23958ea2
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: d56f69d7312e652e51c70f3b25e1687a5c2d06ca
   AWSLex: 208f862a51e1a0c5e856f63fc6893e33c3eef720
   AWSMobileClient: c94ca9856f99e99a4813ebc7f4c19cecce7f06c8
   AWSPinpoint: 198ece283bc4b5b7dc8e08dfb3415b6225203e7f
+  AWSS3: 198942f234628f1ad1c373725d65c33ebfe87af6
   AWSUserPoolsSignIn: a101355358dec050f2ee2e81302e6011e2a95093
   BWWalkthrough: 6b18dc688ff6b7168383fee07fe199ccaad7e9f7
   Cache: f28f8dd64b632155aabf9b3906b036a659048251
@@ -78,6 +88,6 @@ SPEC CHECKSUMS:
   Lightbox: 2dc267df8be2285bc7724cb11cbbf4aaaf59dced
   MapViewPlus: 4e448279f98297f007cb16904a244a525b3c9d5e
 
-PODFILE CHECKSUM: abb8ddeebe2f9636cdb237a04ed50d21ed38b5f2
+PODFILE CHECKSUM: 3c3d8141a030370c2238daab1479f26baf1fa8ea
 
 COCOAPODS: 1.5.3

@@ -63,6 +63,7 @@
 		A545C2CB20EABD4100233C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A56C139220F71E9100D040BF /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "Fonts/Poppins-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		A56C139320F71E9200D040BF /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Medium.ttf"; path = "Fonts/WorkSans-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		A56C139620F723DA00D040BF /* AngelHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngelHack.entitlements; sourceTree = "<group>"; };
 		A59C5FEE20F1EA34001C17B6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A5FB0C6F20F435F50037FE01 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		A8521B04A50748602483E947 /* Pods-AngelHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelHackTests/Pods-AngelHackTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		A545C2A820EABD3F00233C65 /* AngelHack */ = {
 			isa = PBXGroup;
 			children = (
+				A56C139620F723DA00D040BF /* AngelHack.entitlements */,
 				A545C2A920EABD3F00233C65 /* AppDelegate.swift */,
 				A545C2AB20EABD3F00233C65 /* HomePageViewController.swift */,
 				A59C5FEE20F1EA34001C17B6 /* TabBarViewController.swift */,
@@ -269,6 +271,11 @@
 					A545C2A520EABD3F00233C65 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					A545C2B920EABD4100233C65 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -396,12 +403,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AngelHack/Pods-AngelHack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSLex/AWSLex.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/BWWalkthrough/BWWalkthrough.framework",
 				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
@@ -415,12 +424,14 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BWWalkthrough.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
@@ -619,6 +630,7 @@
 			baseConfigurationReference = 5BD15F1C8D247F88D7F5F26B /* Pods-AngelHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AngelHack/AngelHack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZZP22A3W8;
 				INFOPLIST_FILE = AngelHack/Info.plist;
@@ -638,6 +650,7 @@
 			baseConfigurationReference = D457D2C795E40366617BB504 /* Pods-AngelHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AngelHack/AngelHack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZZP22A3W8;
 				INFOPLIST_FILE = AngelHack/Info.plist;

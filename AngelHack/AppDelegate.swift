@@ -37,11 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Logging for the AWS Backend
         AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
         AWSDDLog.sharedInstance.logLevel = .info
-        
-        // Checking to see if user is signed in
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = navigationControllerHandler()
-//        self.window?.makeKeyAndVisible()
 
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:
