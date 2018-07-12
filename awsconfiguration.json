@@ -14,9 +14,15 @@
     },
     "CognitoUserPool": {
         "Default": {
-            "PoolId": "us-east-1_NScLJibg3",
-            "AppClientId": "ap1kfona1sntrs7tsmsemsts4",
-            "AppClientSecret": "1530jjdign3s9krfa9kc20dden7vq74l50rufrluif2t8l9t92mu",
+            "PoolId": "us-east-1_M8VyWfTj7",
+            "AppClientId": "6h1qu0ql61skelepu39shrrhp6",
+            "AppClientSecret": "16kl1kgi4lqsr6ioclla03tb4jlgeaf24kkvqohbjfp21hfq3t09",
+            "Region": "us-east-1"
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "hackathonatx-userfiles-mobilehub-240776385",
             "Region": "us-east-1"
         }
     },
@@ -28,6 +34,12 @@
     },
     "PinpointTargeting": {
         "Default": {
+            "Region": "us-east-1"
+        }
+    },
+    "UserFileManager": {
+        "Default": {
+            "Bucket": "hackathonatx-userfiles-mobilehub-240776385",
             "Region": "us-east-1"
         }
     }

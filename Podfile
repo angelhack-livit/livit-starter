@@ -15,7 +15,8 @@ pod 'AWSLex'
 pod 'Lightbox'
 pod 'MapViewPlus'
 pod 'Kingfisher'
-    #pod 'AgoraRtcEngine_iOS' Too Big To Push To Git
+pod 'AWSS3', '~> 2.6.13'   # For file transfers
+pod 'AWSCognito', '~> 2.6.13'   #For data sync
 
   target 'AngelHackTests' do
     inherit! :search_paths

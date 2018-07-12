@@ -10,6 +10,7 @@ import UIKit
 import AWSMobileClient
 import AWSCore
 import AWSPinpoint
+import UserNotifications
 
 
 @UIApplicationMain
@@ -38,9 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSDDLog.sharedInstance.logLevel = .info
         
         // Checking to see if user is signed in
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = navigationControllerHandler()
-        self.window?.makeKeyAndVisible()
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window?.rootViewController = navigationControllerHandler()
+//        self.window?.makeKeyAndVisible()
 
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:
@@ -63,7 +64,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // Code to remove any notifications once the application has been opened
+        if application.applicationIconBadgeNumber != 0 {
+            application.applicationIconBadgeNumber = 0
+        }
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

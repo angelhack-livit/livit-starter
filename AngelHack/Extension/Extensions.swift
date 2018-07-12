@@ -23,6 +23,11 @@ func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
 let imageCache = NSCache<AnyObject, AnyObject>()
 let textCache = NSCache<AnyObject, AnyObject>()
 
+/**
+UIViewController
+Designed to drop keyboard on UIViewControllers Only (Should not be called on any other type!)
+ */
+
 extension UIViewController
 {
     func hideKeyboard()
@@ -39,6 +44,12 @@ extension UIViewController
         view.endEditing(true)
     }
 }
+
+/**
+ UIImageView Extension
+ Will allow us to be able to pull images off of the web with just the simple function
+ of loadImageUsingCacheWithUrlString
+ */
 
 extension UIImageView {
     
