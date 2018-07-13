@@ -20,6 +20,7 @@
 		A545C2CA20EABD4100233C65 /* AngelHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545C2C920EABD4100233C65 /* AngelHackUITests.swift */; };
 		A56C139420F71E9200D040BF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A56C139220F71E9100D040BF /* Poppins-Light.ttf */; };
 		A56C139520F71E9200D040BF /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A56C139320F71E9200D040BF /* WorkSans-Medium.ttf */; };
+		A581309820F7FF250064B58E /* ClassObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581309720F7FF250064B58E /* ClassObjects.swift */; };
 		A59C5FEF20F1EA34001C17B6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C5FEE20F1EA34001C17B6 /* TabBarViewController.swift */; };
 		A5FB0C7020F435F60037FE01 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB0C6F20F435F50037FE01 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		A56C139220F71E9100D040BF /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "Fonts/Poppins-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		A56C139320F71E9200D040BF /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WorkSans-Medium.ttf"; path = "Fonts/WorkSans-Medium.ttf"; sourceTree = SOURCE_ROOT; };
 		A56C139620F723DA00D040BF /* AngelHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngelHack.entitlements; sourceTree = "<group>"; };
+		A581309720F7FF250064B58E /* ClassObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassObjects.swift; sourceTree = "<group>"; };
 		A59C5FEE20F1EA34001C17B6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A5FB0C6F20F435F50037FE01 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		A8521B04A50748602483E947 /* Pods-AngelHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelHackTests/Pods-AngelHackTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				A56C139620F723DA00D040BF /* AngelHack.entitlements */,
 				A545C2A920EABD3F00233C65 /* AppDelegate.swift */,
 				A545C2AB20EABD3F00233C65 /* HomePageViewController.swift */,
+				A581309620F7FF030064B58E /* Objects */,
 				A59C5FEE20F1EA34001C17B6 /* TabBarViewController.swift */,
 				A5CF16D220F4855B008FA0CC /* Fonts */,
 				A512CF4A20F28AA80090DE7D /* Extension */,
@@ -177,6 +180,14 @@
 				A545C2CB20EABD4100233C65 /* Info.plist */,
 			);
 			path = AngelHackUITests;
+			sourceTree = "<group>";
+		};
+		A581309620F7FF030064B58E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A581309720F7FF250064B58E /* ClassObjects.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		A5CF16D220F4855B008FA0CC /* Fonts */ = {
@@ -453,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A581309820F7FF250064B58E /* ClassObjects.swift in Sources */,
 				A545C2AC20EABD3F00233C65 /* HomePageViewController.swift in Sources */,
 				A59C5FEF20F1EA34001C17B6 /* TabBarViewController.swift in Sources */,
 				A545C2AA20EABD3F00233C65 /* AppDelegate.swift in Sources */,
